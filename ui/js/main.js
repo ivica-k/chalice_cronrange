@@ -89,7 +89,9 @@ $(function() {
     });
 });
 
-$('#cron-examples a').click(function(e) {
+
+$('#cron-examples a').click(function(e) {    
+  event.preventDefault();
   var example_cron = $(e.target).attr('value');
   $('#cron_expression').val(example_cron);
 });
